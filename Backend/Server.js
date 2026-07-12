@@ -23,15 +23,23 @@ app.use('/api/categories', categoryRoutes);
 app.use('/api/vendors', vendorRoutes);
 app.use('/api/orders', orderRoutes);
 
-app.get('/', async (req, res) => {
+app.get("/", async (req, res) => {
   try {
     await db.authenticate();
-    res.json({ message: 'Database connected successfully' });
+    res.json({
+      success: true,
+      message: "Database connected successfully",
+    });
   } catch (error) {
-    res.status(500).json({ error: error.message });
+    console.error(error);
+
+    res.status(500).json({
+      success: false,
+      message: error.message,
+      error,
+    });
   }
 });
-
 
 
 async function startServer() {
