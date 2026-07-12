@@ -44,10 +44,10 @@ app.get("/", async (req, res) => {
 
 async function startServer() {
   try {
-    //await db.authenticate();
+    await db.authenticate();
     console.log('Database connected successfully');
 
-    //await db.sync({ alter: true });
+    await db.sync({ alter: true });
     console.log('Database synchronized');
 
     app.listen(PORT, () => {
