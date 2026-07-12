@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { Link, useNavigate, useLocation } from 'react-router-dom';
+import { API_URL } from '../lib/config';
 interface SignupProps {
   onAuth: (user: any, token: string) => void;
 }
@@ -36,7 +37,7 @@ function Signup({ onAuth }: SignupProps) {
 
    setLoading(true);
    try {
-     const response = await fetch('zomato-clone-production-0c2f.up.railway.app/users/signup', {
+     const response = await fetch(`${API_URL}/users/signup`, {
          method: 'POST',
          body: formData,
      });

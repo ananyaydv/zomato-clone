@@ -13,7 +13,7 @@ export const Route = createFileRoute("/orders")({
   component: OrdersPage,
 });
 
-const API_URL = "http://localhost:8001/api";
+const API_URL = "zomato-clone-production-0c2f.up.railway.app";
 
 const tabs: { key: "all" | OrderStatus; label: string }[] = [
   { key: "all", label: "All" },

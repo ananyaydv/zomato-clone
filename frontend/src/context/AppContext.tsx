@@ -1,4 +1,5 @@
 import { createContext, useContext, useState, ReactNode } from 'react';
+import { API_URL } from '../lib/config';
 
 export interface MenuItem {
   id: string;
@@ -410,7 +411,7 @@ export function AppProvider({ children }: { children: ReactNode }) {
   const [orders, setOrders] = useState<Order[]>(sampleOrders);
   const [currentRestaurant, setCurrentRestaurant] = useState<Restaurant | null>(null);
 
-  const API_URL = 'zomato-clone-production-0c2f.up.railway.app';
+  
 
   const addToCart = (item: MenuItem, restaurantId: string, restaurantName: string) => {
     setCart((prev) => {

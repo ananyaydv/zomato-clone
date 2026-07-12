@@ -14,7 +14,7 @@ export const Route = createFileRoute("/customers")({
   component: CustomersPage,
 });
 
-const API_URL = "http://localhost:8001/api";
+const API_URL = "zomato-clone-production-0c2f.up.railway.app";
 
 const initials = (n: string) => n.split(" ").map((x) => x[0]).slice(0, 2).join("").toUpperCase();
 
