@@ -10,7 +10,7 @@ const vendorRoutes = require('./Routes/vendorRoutes');
 const orderRoutes = require('./Routes/orderRoutes');
 
 const app = express();
-const PORT = 8001;
+const PORT = process.env.PORT || 5000;
 
 app.use(cors());
 app.use(express.json({ limit: '10mb' }));
@@ -36,10 +36,10 @@ app.get('/', async (req, res) => {
 
 async function startServer() {
   try {
-    await db.authenticate();
+    //await db.authenticate();
     console.log('Database connected successfully');
 
-    await db.sync({ alter: true });
+    //await db.sync({ alter: true });
     console.log('Database synchronized');
 
     app.listen(PORT, () => {
