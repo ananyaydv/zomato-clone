@@ -36,7 +36,7 @@ function Signup({ onAuth }: SignupProps) {
 
    setLoading(true);
    try {
-     const response = await fetch('http://localhost:8001/api/users/signup', {
+     const response = await fetch('zomato-clone-production-0c2f.up.railway.app/users/signup', {
          method: 'POST',
          body: formData,
      });

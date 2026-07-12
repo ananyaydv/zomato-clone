@@ -23,7 +23,7 @@ function Login({ onAuth }: { onAuth: (user: any, token: string) => void }) {
      };
      setLoading(true);
      try {
-       const response = await fetch('http://localhost:8001/api/users/login', {
+       const response = await fetch('zomato-clone-production-0c2f.up.railway.app/users/login', {
            method: 'POST',
            headers: {
                'Content-Type': 'application/json',
