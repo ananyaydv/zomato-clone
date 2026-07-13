@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 logs
 *.log
 npm-debug.log*
@@ -22,9 +21,3 @@ dist-ssr
 *.sln
 *.sw?
 .env
-=======
-node_modules
-.env
-Backend/node_modules
-frontend/node_modules
->>>>>>> d729aadb729d13939d0a3ac1f698fbd2f8e09d25
