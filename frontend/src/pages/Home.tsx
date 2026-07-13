@@ -9,12 +9,12 @@ import { fetchCategories, fetchRestaurants, restaurantsToList } from '../lib/api
 const categories = [
   { name: 'Biryani', image: 'https://images.pexels.com/photos/12737656/pexels-photo-12737656.jpeg?auto=compress&cs=tinysrgb&w=150', count: 254 },
   { name: 'Pizza', image: 'https://images.pexels.com/photos/1566837/pexels-photo-1566837.jpeg?auto=compress&cs=tinysrgb&w=150', count: 187 },
-  { name: 'Burgers', image: 'https://images.pexels.com/photos/1633565/pexels-photo-1633565.jpeg?auto=compress&cs=tinysrgb&w=150', count: 143 },
+  { name: 'Burgers', image: 'https://images.pexels.com/photos/1639557/pexels-photo-1639557.jpeg?auto=compress&cs=tinysrgb&w=150', count: 143 },
   { name: 'Chinese', image: 'https://images.pexels.com/photos/2347311/pexels-photo-2347311.jpeg?auto=compress&cs=tinysrgb&w=150', count: 221 },
-  { name: 'North Indian', image: 'https://images.pexels.com/photos/5408352/pexels-photo-5408352.jpeg?auto=compress&cs=tinysrgb&w=150', count: 312 },
-  { name: 'South Indian', image: 'https://images.pexels.com/photos/3014562/pexels-photo-3014562.jpeg?auto=compress&cs=tinysrgb&w=150', count: 178 },
-  { name: 'Desserts', image: 'https://images.pexels.com/photos/5408352/pexels-photo-5408352.jpeg?auto=compress&cs=tinysrgb&w=150', count: 89 },
-  { name: 'Beverages', image: 'https://images.pexels.com/photos/3014562/pexels-photo-3014562.jpeg?auto=compress&cs=tinysrgb&w=150', count: 156 },
+  { name: 'North Indian', image: 'https://images.pexels.com/photos/28125427/pexels-photo-28125427.jpeg?auto=compress&cs=tinysrgb&w=150', count: 312 },
+  { name: 'South Indian', image: 'https://images.pexels.com/photos/31199041/pexels-photo-31199041.jpeg?auto=compress&cs=tinysrgb&w=150', count: 178 },
+  { name: 'Desserts', image: 'https://images.pexels.com/photos/264731/pexels-photo-264731.jpeg?auto=compress&cs=tinysrgb&w=150', count: 89 },
+  { name: 'Beverages', image: 'https://images.pexels.com/photos/96620/pexels-photo-96620.jpeg?auto=compress&cs=tinysrgb&w=150', count: 156 },
 ];
 
 export default function Home() {
